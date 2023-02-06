@@ -2,20 +2,30 @@
   <main>
     <header>
       <img src="./assets/pinia-logo.svg" alt="pinia-logo"/>
-      <h1>{{ taskStore.name }}</h1>
+      <h1>Pinia Tasks</h1>
     </header>
+
+    <div class="task-list">
+      <div v-for="task in taskStore.tasks">
+        <TaskDetails :task="task" />
+      </div>
+    </div>
   </main>
 
 </template>
 
 <script>
   import { useTaskStore } from './stores/TaskStore'
+  import TaskDetails from '@/components/TaskDetails.vue'
 
   export default {
     setup () {
       const taskStore = useTaskStore()
 
       return { taskStore }
+    },
+    components: {
+      TaskDetails
     }
   }
 </script>
