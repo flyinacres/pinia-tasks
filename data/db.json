@@ -7,7 +7,7 @@
     },
     {
       "title": "become an eldern lord",
-      "isFav": true,
+      "isFav": false,
       "id": 3
     },
     {
@@ -16,9 +16,9 @@
       "id": 4
     },
     {
-      "title": "should be here",
-      "isFav": false,
-      "id": 5810
+      "title": "new one",
+      "isFav": true,
+      "id": 1060
     }
   ]
 }
